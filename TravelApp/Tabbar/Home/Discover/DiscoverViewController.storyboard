@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Discover View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="DiscoverViewController" id="Y6W-OH-hqX" customClass="DiscoverViewController" customModule="TravelApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" tag="2" contentMode="scaleAspectFit" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="80+ Planets and their tours " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VaC-6L-jfD">
+                                <rect key="frame" x="16" y="147" width="190" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="iXX-yI-fWe">
+                                <rect key="frame" x="4" y="504" width="371" height="225"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="3z1-Ka-3Ug">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" id="hbz-w5-bt0">
+                                        <rect key="frame" x="0.0" y="48.666666666666664" width="128" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="GhA-Sf-hfl">
+                                            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </collectionViewCellContentView>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Discover" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I8k-YD-ppH">
+                                <rect key="frame" x="16" y="141" width="77" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="boner" translatesAutoresizingMaskIntoConstraints="NO" id="rYj-pM-2N9">
+                                <rect key="frame" x="16" y="173" width="343" height="236"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="236" id="Ysn-Nw-Vwf"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zVF-dM-bIn">
+                                <rect key="frame" x="24" y="233" width="240.66666666666663" height="103"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Don’t have an idea
+where to go?</string>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="29"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lpx-tV-2ji">
+                                <rect key="frame" x="50" y="344" width="84" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Explore Now"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Featured Destinations" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k1g-0g-kLe">
+                                <rect key="frame" x="91.666666666666686" y="417" width="192" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Available Soon" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GBr-jW-V0l">
+                                <rect key="frame" x="68.666666666666671" y="89" width="237.66666666666663" height="30"/>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="30"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Amazing flights with great deals" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zvQ-2K-Vgx">
+                                <rect key="frame" x="72" y="449" width="231" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="C2C-Ri-vlE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="rYj-pM-2N9" secondAttribute="trailing" constant="16" id="2u5-Wn-Rlq"/>
+                            <constraint firstItem="iXX-yI-fWe" firstAttribute="top" secondItem="zvQ-2K-Vgx" secondAttribute="bottom" constant="31" id="5fF-BL-Mkd"/>
+                            <constraint firstItem="iXX-yI-fWe" firstAttribute="bottom" secondItem="vDu-zF-Fre" secondAttribute="bottom" id="8Pp-U5-a2d"/>
+                            <constraint firstItem="rYj-pM-2N9" firstAttribute="leading" secondItem="VaC-6L-jfD" secondAttribute="leading" id="AbV-fW-nGN"/>
+                            <constraint firstItem="rYj-pM-2N9" firstAttribute="top" secondItem="VaC-6L-jfD" secondAttribute="bottom" constant="8" id="BJP-3b-Upy"/>
+                            <constraint firstItem="rYj-pM-2N9" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="DoX-DZ-5hD"/>
+                            <constraint firstItem="rYj-pM-2N9" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" constant="173" id="Nj5-M3-Ygj"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="iXX-yI-fWe" secondAttribute="bottom" id="Q0k-6c-z17"/>
+                            <constraint firstItem="I8k-YD-ppH" firstAttribute="bottom" secondItem="VaC-6L-jfD" secondAttribute="bottom" id="XBW-2I-p4M"/>
+                            <constraint firstItem="iXX-yI-fWe" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="4" id="ZD1-Ff-tJM"/>
+                            <constraint firstItem="I8k-YD-ppH" firstAttribute="top" secondItem="GBr-jW-V0l" secondAttribute="bottom" constant="22" id="ZaF-Y9-Gog"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="zvQ-2K-Vgx" secondAttribute="trailing" constant="72" id="dM7-hx-vnw"/>
+                            <constraint firstItem="rYj-pM-2N9" firstAttribute="centerX" secondItem="GBr-jW-V0l" secondAttribute="centerX" id="eKh-mY-yOy"/>
+                            <constraint firstItem="k1g-0g-kLe" firstAttribute="centerX" secondItem="zvQ-2K-Vgx" secondAttribute="centerX" id="gv4-jt-tQH"/>
+                            <constraint firstItem="rYj-pM-2N9" firstAttribute="leading" secondItem="I8k-YD-ppH" secondAttribute="leading" id="jcL-pJ-RH6"/>
+                            <constraint firstItem="iXX-yI-fWe" firstAttribute="centerX" secondItem="zvQ-2K-Vgx" secondAttribute="centerX" constant="2" id="qU7-Jy-t6l"/>
+                            <constraint firstItem="zvQ-2K-Vgx" firstAttribute="top" secondItem="k1g-0g-kLe" secondAttribute="bottom" constant="8" id="u9D-x7-1Oy"/>
+                            <constraint firstItem="k1g-0g-kLe" firstAttribute="top" secondItem="rYj-pM-2N9" secondAttribute="bottom" constant="8" id="wFS-ti-cj1"/>
+                            <constraint firstItem="zvQ-2K-Vgx" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="72" id="x0p-u1-MeV"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" tag="2" title="" image="Travel_icon" id="VIZ-nN-KJ9"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="collectionView" destination="iXX-yI-fWe" id="SqB-C8-VQP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="58.878504672897193" y="-37.580993520518362"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Travel_icon" width="47" height="42"/>
+        <image name="boner" width="343" height="172"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
