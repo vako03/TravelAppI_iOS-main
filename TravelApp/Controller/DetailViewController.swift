@@ -28,6 +28,7 @@ class DetailViewController: UIViewController, MKMapViewDelegate, CLLocationManag
     override func viewDidLoad() {
         super.viewDidLoad()
         setDisplayData()
+        setMap()
         
         reviewTableView.dataSource = self
         galeryCollectionView.dataSource = self
@@ -51,6 +52,21 @@ class DetailViewController: UIViewController, MKMapViewDelegate, CLLocationManag
     override func willRotate(to toInterfaceOrientation: UIInterfaceOrientation, duration: TimeInterval) {
         setImageRounded(gradientTranparent)
         setImageRounded(placeImage)
+    }
+    
+    private func setMap(){
+        let location = CLLocationCoordinate2D(latitude: (place?.latitude)!,
+                                              longitude: (place?.longitude)!)
+            
+        let span = MKCoordinateSpan(latitudeDelta: 0.08, longitudeDelta: 0.08)
+        let region = MKCoordinateRegion(center: location, span: span)
+        mapKitView.setRegion(region, animated: true)
+            
+        let annotation = MKPointAnnotation()
+        annotation.coordinate = location
+        annotation.title = place?.name
+        annotation.subtitle = place?.address
+        mapKitView.addAnnotation(annotation)
     }
     
   
