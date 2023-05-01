@@ -8,6 +8,7 @@ import UIKit
 
 class HomeViewController: UIViewController {
     
+    
     @IBOutlet private weak var PlacesTableView: UITableView!
     @IBOutlet private weak var MenuCollectionView: UICollectionView!
     @IBOutlet private weak var popularHorizontallyScrollableStackView: UIStackView!
@@ -102,11 +103,11 @@ extension HomeViewController: UITableViewDataSource {
            segue.identifier == PropertyKeys.showPlacesDetail {
             let detailPlaceViewController = segue.destination as! DetailViewController
 
-            let filteredTableData = placesSpace.places.filter {
-                recomendedPlace.contains($0.id)
-            }
+//            let filteredTableData = placesSpace.places.filter {
+//                recomendedPlace.contains($0.id)
+//            }
 
-            detailPlaceViewController.place = filteredTableData[indexPath.row]
+            detailPlaceViewController.place = placesSpace.places[indexPath.row]
         }
     }
     
