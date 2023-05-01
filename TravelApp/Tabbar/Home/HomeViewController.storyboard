@@ -24,7 +24,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="1800"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Discover" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fLn-4Z-vgH">
-                                                <rect key="frame" x="20" y="20" width="183" height="26"/>
+                                                <rect key="frame" x="20" y="20" width="183" height="28.666666666666671"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="183" id="m3A-6c-ebA"/>
                                                 </constraints>
@@ -32,14 +32,6 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.and.background.dotted" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Ain-r0-d0S">
-                                                <rect key="frame" x="305" y="9.3333333333333321" width="50" height="47.333333333333343"/>
-                                                <color key="tintColor" red="1" green="0.76217398120000002" blue="0.53210669519999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="50" id="NPh-FX-IxA"/>
-                                                    <constraint firstAttribute="height" constant="50" id="kL1-2y-OPN"/>
-                                                </constraints>
-                                            </imageView>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tdc-jE-Vbj">
                                                 <rect key="frame" x="35" y="152" width="304" height="160"/>
                                                 <color key="backgroundColor" red="0.66541976089999999" green="1" blue="0.62799115859999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -270,6 +262,7 @@
                                             <constraint firstAttribute="trailing" secondItem="RT6-2j-pu4" secondAttribute="trailing" constant="20" symbolic="YES" id="22j-bP-VEg"/>
                                             <constraint firstItem="HC6-EN-G8j" firstAttribute="top" secondItem="JH9-T5-vu2" secondAttribute="bottom" constant="8" symbolic="YES" id="25M-mq-hi3"/>
                                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="EfZ-cf-GDY" secondAttribute="trailing" constant="20" symbolic="YES" id="2i5-iL-Brq"/>
+                                            <constraint firstItem="tdc-jE-Vbj" firstAttribute="top" secondItem="yLu-iJ-9kc" secondAttribute="top" constant="152" id="3OC-t0-GMH"/>
                                             <constraint firstItem="tdc-jE-Vbj" firstAttribute="trailing" secondItem="etM-Wy-HeU" secondAttribute="trailing" id="4vU-fe-lw7"/>
                                             <constraint firstItem="yDT-oy-Rep" firstAttribute="leading" secondItem="yLu-iJ-9kc" secondAttribute="leading" constant="35" id="7pi-uw-yuR"/>
                                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="fUb-I0-fqS" secondAttribute="trailing" constant="20" symbolic="YES" id="9y9-bg-sf4"/>
@@ -284,28 +277,24 @@
                                             <constraint firstItem="HC6-EN-G8j" firstAttribute="leading" secondItem="yLu-iJ-9kc" secondAttribute="leading" id="N9m-QF-hMJ"/>
                                             <constraint firstItem="fUb-I0-fqS" firstAttribute="leading" secondItem="yLu-iJ-9kc" secondAttribute="leading" constant="20" symbolic="YES" id="NLt-f4-xag"/>
                                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="yDT-oy-Rep" secondAttribute="trailing" constant="20" symbolic="YES" id="RJl-NM-PMx"/>
-                                            <constraint firstItem="etM-Wy-HeU" firstAttribute="top" secondItem="Ain-r0-d0S" secondAttribute="bottom" constant="8" symbolic="YES" id="RbR-uV-ksv"/>
                                             <constraint firstItem="fLn-4Z-vgH" firstAttribute="top" secondItem="yLu-iJ-9kc" secondAttribute="top" constant="20" id="TQM-RN-Rh0"/>
                                             <constraint firstItem="EfZ-cf-GDY" firstAttribute="top" secondItem="4t2-co-ZX3" secondAttribute="bottom" constant="48" id="W5B-No-eTl"/>
                                             <constraint firstItem="tdc-jE-Vbj" firstAttribute="leading" secondItem="etM-Wy-HeU" secondAttribute="leading" id="XAe-DJ-CK3"/>
                                             <constraint firstAttribute="trailing" secondItem="HC6-EN-G8j" secondAttribute="trailing" id="Zt5-HN-i66"/>
                                             <constraint firstItem="RT6-2j-pu4" firstAttribute="leading" secondItem="yLu-iJ-9kc" secondAttribute="leading" constant="20" symbolic="YES" id="bDW-We-KcH"/>
-                                            <constraint firstItem="Ain-r0-d0S" firstAttribute="top" secondItem="yLu-iJ-9kc" secondAttribute="top" constant="8" id="bO7-U0-c0b"/>
                                             <constraint firstItem="YLq-UL-Y6m" firstAttribute="leading" secondItem="yLu-iJ-9kc" secondAttribute="leading" constant="20" symbolic="YES" id="c9E-9C-dyH"/>
                                             <constraint firstItem="fUb-I0-fqS" firstAttribute="top" secondItem="HC6-EN-G8j" secondAttribute="bottom" constant="8" symbolic="YES" id="ezX-oE-TjV"/>
                                             <constraint firstItem="4t2-co-ZX3" firstAttribute="leading" secondItem="yLu-iJ-9kc" secondAttribute="leading" id="gRv-6F-INy"/>
                                             <constraint firstItem="RT6-2j-pu4" firstAttribute="top" secondItem="fUb-I0-fqS" secondAttribute="bottom" constant="8" symbolic="YES" id="hck-nj-nay"/>
+                                            <constraint firstItem="etM-Wy-HeU" firstAttribute="top" secondItem="fLn-4Z-vgH" secondAttribute="bottom" constant="17.333333333333329" id="jiC-hh-mcD"/>
                                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="JH9-T5-vu2" secondAttribute="trailing" constant="20" symbolic="YES" id="ksl-R2-63y"/>
                                             <constraint firstAttribute="trailing" secondItem="4t2-co-ZX3" secondAttribute="trailing" id="lPR-BB-3Q8"/>
                                             <constraint firstItem="qX8-Zk-tuw" firstAttribute="bottom" secondItem="yLu-iJ-9kc" secondAttribute="bottomMargin" id="mJB-yZ-v9e"/>
-                                            <constraint firstItem="Ain-r0-d0S" firstAttribute="centerY" secondItem="fLn-4Z-vgH" secondAttribute="centerY" id="oUI-Kl-vDG"/>
                                             <constraint firstItem="yDT-oy-Rep" firstAttribute="top" secondItem="EfZ-cf-GDY" secondAttribute="bottom" constant="31.999999999999773" id="oce-It-wQz"/>
-                                            <constraint firstAttribute="trailing" secondItem="Ain-r0-d0S" secondAttribute="trailing" constant="20" id="pOz-76-eyv"/>
                                             <constraint firstItem="qX8-Zk-tuw" firstAttribute="leading" secondItem="yLu-iJ-9kc" secondAttribute="leading" id="quo-5y-QEJ"/>
                                             <constraint firstAttribute="trailing" secondItem="qX8-Zk-tuw" secondAttribute="trailing" id="r9C-oL-Eu5"/>
                                             <constraint firstItem="tdc-jE-Vbj" firstAttribute="leading" secondItem="yLu-iJ-9kc" secondAttribute="leading" constant="35" id="rHV-yX-5lB"/>
                                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="YLq-UL-Y6m" secondAttribute="trailing" constant="20" symbolic="YES" id="tx2-ro-qHx"/>
-                                            <constraint firstItem="tdc-jE-Vbj" firstAttribute="top" secondItem="Ain-r0-d0S" secondAttribute="bottom" constant="94" id="wa8-Wv-yKa"/>
                                             <constraint firstItem="YLq-UL-Y6m" firstAttribute="top" secondItem="RT6-2j-pu4" secondAttribute="bottom" constant="26" id="xRA-MU-jNv"/>
                                             <constraint firstItem="EfZ-cf-GDY" firstAttribute="leading" secondItem="yLu-iJ-9kc" secondAttribute="leading" constant="35" id="xd2-6p-YpD"/>
                                             <constraint firstAttribute="bottom" secondItem="tdc-jE-Vbj" secondAttribute="bottom" constant="1488" id="xnE-tJ-h4l"/>
@@ -340,7 +329,6 @@
                     <connections>
                         <outlet property="MenuCollectionView" destination="RT6-2j-pu4" id="h3t-o6-Tr9"/>
                         <outlet property="PlacesTableView" destination="4t2-co-ZX3" id="HoB-Uk-lfJ"/>
-                        <outlet property="imageUser" destination="Ain-r0-d0S" id="6LP-Yd-96y"/>
                         <outlet property="popularHorizontallyScrollView" destination="HC6-EN-G8j" id="ucB-jg-OVd"/>
                         <outlet property="popularHorizontallyScrollableStackView" destination="sS8-1Q-6Mq" id="HlK-Hr-KOR"/>
                         <outlet property="viewHomeBanner" destination="tdc-jE-Vbj" id="JfD-33-MEI"/>
@@ -651,7 +639,6 @@
         <image name="globe.americas.fill" catalog="system" width="128" height="123"/>
         <image name="heart" catalog="system" width="128" height="107"/>
         <image name="mappin.and.ellipse" catalog="system" width="117" height="128"/>
-        <image name="person.and.background.dotted" catalog="system" width="128" height="94"/>
         <image name="star.fill" catalog="system" width="128" height="116"/>
         <image name="transparent_gradient_blue" width="3520" height="2470"/>
         <systemColor name="systemBackgroundColor">
