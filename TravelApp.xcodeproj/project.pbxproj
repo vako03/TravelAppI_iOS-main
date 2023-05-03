@@ -14,6 +14,9 @@
 		1A08B6E029B9E45500EFE0AF /* CellDesign.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A08B6DF29B9E45500EFE0AF /* CellDesign.swift */; };
 		1A08B6E229B9E59D00EFE0AF /* PopularContentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A08B6E129B9E59D00EFE0AF /* PopularContentView.xib */; };
 		1A08B6E429B9E5A600EFE0AF /* PopularView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A08B6E329B9E5A600EFE0AF /* PopularView.swift */; };
+		1A1F12B52A025798005235FA /* MarsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1F12B42A025798005235FA /* MarsViewController.swift */; };
+		1A1F12B82A025A19005235FA /* CalendarKit in Frameworks */ = {isa = PBXBuildFile; productRef = 1A1F12B72A025A19005235FA /* CalendarKit */; };
+		1A1F12BB2A025E87005235FA /* HorizonCalendar in Frameworks */ = {isa = PBXBuildFile; productRef = 1A1F12BA2A025E87005235FA /* HorizonCalendar */; };
 		1A37F4D829C6FAEB004D8A69 /* DiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A37F4D729C6FAEA004D8A69 /* DiscoverViewController.swift */; };
 		1A37F4DA29C6FAFF004D8A69 /* DiscoverViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A37F4D929C6FAFF004D8A69 /* DiscoverViewController.storyboard */; };
 		1A71623E29A6B6C400432188 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A71623C29A6B6C400432188 /* Main.storyboard */; };
@@ -27,6 +30,7 @@
 		1A7447E329C22EAA0030E619 /* ReviewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7447E229C22EA90030E619 /* ReviewTableViewCell.swift */; };
 		1A7447E529C22EB30030E619 /* GaleryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7447E429C22EB30030E619 /* GaleryCollectionViewCell.swift */; };
 		1A7C979329AB729100153D02 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7C979229AB729100153D02 /* TabBarViewController.swift */; };
+		1A7DD0902A02818D006678C2 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7DD08F2A02818D006678C2 /* CalendarViewController.swift */; };
 		1A7EDB1929A79F1B001D1F7F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1A7EDB1829A79F1B001D1F7F /* GoogleService-Info.plist */; };
 		1A7EDB1C29A79FE7001D1F7F /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 1A7EDB1B29A79FE7001D1F7F /* FirebaseAuth */; };
 		1A7EDB1E29A7A0FA001D1F7F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7EDB1D29A7A0FA001D1F7F /* LoginViewController.swift */; };
@@ -61,6 +65,7 @@
 		1A08B6DF29B9E45500EFE0AF /* CellDesign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellDesign.swift; sourceTree = "<group>"; };
 		1A08B6E129B9E59D00EFE0AF /* PopularContentView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PopularContentView.xib; sourceTree = "<group>"; };
 		1A08B6E329B9E5A600EFE0AF /* PopularView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopularView.swift; sourceTree = "<group>"; };
+		1A1F12B42A025798005235FA /* MarsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarsViewController.swift; sourceTree = "<group>"; };
 		1A37F4D729C6FAEA004D8A69 /* DiscoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoverViewController.swift; sourceTree = "<group>"; };
 		1A37F4D929C6FAFF004D8A69 /* DiscoverViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DiscoverViewController.storyboard; sourceTree = "<group>"; };
 		1A71623329A6B6C400432188 /* TravelApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravelApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -76,6 +81,7 @@
 		1A7447E229C22EA90030E619 /* ReviewTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewTableViewCell.swift; sourceTree = "<group>"; };
 		1A7447E429C22EB30030E619 /* GaleryCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GaleryCollectionViewCell.swift; sourceTree = "<group>"; };
 		1A7C979229AB729100153D02 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		1A7DD08F2A02818D006678C2 /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		1A7EDB1829A79F1B001D1F7F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		1A7EDB1D29A7A0FA001D1F7F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		1A7EDB1F29A7A10A001D1F7F /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
@@ -107,6 +113,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				1A7EDB1C29A79FE7001D1F7F /* FirebaseAuth in Frameworks */,
+				1A1F12BB2A025E87005235FA /* HorizonCalendar in Frameworks */,
+				1A1F12B82A025A19005235FA /* CalendarKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,6 +146,8 @@
 			children = (
 				1A37F4D729C6FAEA004D8A69 /* DiscoverViewController.swift */,
 				1A37F4D929C6FAFF004D8A69 /* DiscoverViewController.storyboard */,
+				1A1F12B42A025798005235FA /* MarsViewController.swift */,
+				1A7DD08F2A02818D006678C2 /* CalendarViewController.swift */,
 			);
 			name = Discover;
 			path = Favourite/Discover;
@@ -319,6 +329,8 @@
 			name = TravelApp;
 			packageProductDependencies = (
 				1A7EDB1B29A79FE7001D1F7F /* FirebaseAuth */,
+				1A1F12B72A025A19005235FA /* CalendarKit */,
+				1A1F12BA2A025E87005235FA /* HorizonCalendar */,
 			);
 			productName = TravelApp;
 			productReference = 1A71623329A6B6C400432188 /* TravelApp.app */;
@@ -350,6 +362,8 @@
 			mainGroup = 1A71622A29A6B6C300432188;
 			packageReferences = (
 				1A7EDB1A29A79FE7001D1F7F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				1A1F12B62A025A19005235FA /* XCRemoteSwiftPackageReference "CalendarKit" */,
+				1A1F12B92A025E87005235FA /* XCRemoteSwiftPackageReference "HorizonCalendar" */,
 			);
 			productRefGroup = 1A71623429A6B6C400432188 /* Products */;
 			projectDirPath = "";
@@ -388,6 +402,7 @@
 			files = (
 				1A9AD91F29B9DCB6003A8B20 /* HomeViewController.swift in Sources */,
 				1A9AD92729B9DEC7003A8B20 /* FetchData.swift in Sources */,
+				1A7DD0902A02818D006678C2 /* CalendarViewController.swift in Sources */,
 				1AD5210D29B129F3009E3D8A /* Model.swift in Sources */,
 				1A7EDB1E29A7A0FA001D1F7F /* LoginViewController.swift in Sources */,
 				1A7447E129C22E9F0030E619 /* PlacesTableViewCell.swift in Sources */,
@@ -410,6 +425,7 @@
 				1AD520F529B09B7B009E3D8A /* DiscoverCell.swift in Sources */,
 				1A08B6E029B9E45500EFE0AF /* CellDesign.swift in Sources */,
 				1AF7BA7029CBB2B700272214 /* SceneDelegate.swift in Sources */,
+				1A1F12B52A025798005235FA /* MarsViewController.swift in Sources */,
 				1A9AD92929B9DF3A003A8B20 /* FetchImageURL.swift in Sources */,
 				1A71625829A6C12700432188 /* UIView+Extention.swift in Sources */,
 				1AD5210F29B12AEE009E3D8A /* PlanetModel.swift in Sources */,
@@ -637,6 +653,22 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		1A1F12B62A025A19005235FA /* XCRemoteSwiftPackageReference "CalendarKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/richardtop/CalendarKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		1A1F12B92A025E87005235FA /* XCRemoteSwiftPackageReference "HorizonCalendar" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/HorizonCalendar.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 		1A7EDB1A29A79FE7001D1F7F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
@@ -648,6 +680,16 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		1A1F12B72A025A19005235FA /* CalendarKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1A1F12B62A025A19005235FA /* XCRemoteSwiftPackageReference "CalendarKit" */;
+			productName = CalendarKit;
+		};
+		1A1F12BA2A025E87005235FA /* HorizonCalendar */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1A1F12B92A025E87005235FA /* XCRemoteSwiftPackageReference "HorizonCalendar" */;
+			productName = HorizonCalendar;
+		};
 		1A7EDB1B29A79FE7001D1F7F /* FirebaseAuth */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 1A7EDB1A29A79FE7001D1F7F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;

@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import HorizonCalendar
+import CalendarKit
 
 class DiscoverViewController: UIViewController {
 
@@ -23,6 +25,15 @@ class DiscoverViewController: UIViewController {
         loadDiscoevrPlanetsData()
     
         }
+    
+    @IBAction func openMars(_ sender: Any) {
+            
+        let storyboard = UIStoryboard(name: "DiscoverViewController", bundle: nil)
+        let marsVC = storyboard.instantiateViewController(withIdentifier: "MarsViewController") as! MarsViewController
+            navigationController?.pushViewController(marsVC, animated: true)
+        
+    }
+    
     
     private func loadDiscoevrPlanetsData() {
         fetchDiscoverPlanetsData { [weak self] in

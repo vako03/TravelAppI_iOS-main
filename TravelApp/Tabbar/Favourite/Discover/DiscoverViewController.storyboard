@@ -17,12 +17,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10+ Planets and their tours " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VaC-6L-jfD">
-                                <rect key="frame" x="16" y="142.66666666666666" width="207" height="19.333333333333343"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
-                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="iXX-yI-fWe">
                                 <rect key="frame" x="4" y="472" width="371" height="293"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -44,8 +38,8 @@
                                 </cells>
                             </collectionView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Buy A Trip To Space" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GBr-jW-V0l">
-                                <rect key="frame" x="68" y="58" width="239" height="73"/>
-                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="28"/>
+                                <rect key="frame" x="68" y="57.999999999999993" width="239" height="28.666666666666664"/>
+                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="22"/>
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -75,7 +69,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Explore Now"/>
                                 <connections>
-                                    <segue destination="ygV-cf-6oy" kind="showDetail" id="lF3-Ca-o0b"/>
+                                    <action selector="openMars:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="BCt-kO-V08"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WIk-Rq-uKx">
@@ -85,6 +79,12 @@
 where to go?</string>
                                 <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="29"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10+ Planets and their tours " textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VaC-6L-jfD">
+                                <rect key="frame" x="84" y="142" width="207" height="19.333333333333343"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -106,7 +106,7 @@ where to go?</string>
                             <constraint firstItem="iXX-yI-fWe" firstAttribute="top" secondItem="zvQ-2K-Vgx" secondAttribute="bottom" constant="8" id="otH-fu-RGd"/>
                             <constraint firstItem="zvQ-2K-Vgx" firstAttribute="centerX" secondItem="k1g-0g-kLe" secondAttribute="centerX" id="oyX-un-WQ7"/>
                             <constraint firstItem="rYj-pM-2N9" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" constant="170" id="pIu-pk-zK1"/>
-                            <constraint firstItem="VaC-6L-jfD" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leadingMargin" id="rdz-0g-tnh"/>
+                            <constraint firstItem="VaC-6L-jfD" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leadingMargin" constant="68" id="rdz-0g-tnh"/>
                             <constraint firstItem="GBr-jW-V0l" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="68" id="x1f-QT-1vQ"/>
                         </constraints>
                     </view>
@@ -122,12 +122,12 @@ where to go?</string>
             </objects>
             <point key="canvasLocation" x="64.799999999999997" y="-34.729064039408868"/>
         </scene>
-        <!--View Controller-->
+        <!--Mars View Controller-->
         <scene sceneID="il6-we-EFy">
             <objects>
-                <viewController id="ygV-cf-6oy" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MarsViewController" id="ygV-cf-6oy" customClass="MarsViewController" customModule="TravelApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fot-ns-tTb">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="755"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mars" translatesAutoresizingMaskIntoConstraints="NO" id="huz-RK-ax2">
@@ -138,54 +138,45 @@ where to go?</string>
                                 <rect key="frame" x="16" y="410" width="343" height="117"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Flight" translatesAutoresizingMaskIntoConstraints="NO" id="rEj-1S-Jgo">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Flight" translatesAutoresizingMaskIntoConstraints="NO" id="rEj-1S-Jgo">
                                 <rect key="frame" x="16" y="535" width="343" height="186"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mdp-dV-qvg">
-                                <rect key="frame" x="112" y="668" width="155" height="43"/>
+                                <rect key="frame" x="110" y="729" width="155" height="43"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                 <color key="tintColor" systemColor="systemBackgroundColor"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="By Ticket"/>
                                 <connections>
-                                    <segue destination="hja-YK-aai" kind="show" id="bec-Fj-TK8"/>
+                                    <action selector="byTicket:" destination="ygV-cf-6oy" eventType="touchUpInside" id="55d-yz-TVI"/>
                                 </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="73Q-ZS-oUy"/>
-                        <color key="backgroundColor" systemColor="labelColor"/>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Fq-UD-FBe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="884" y="-35.467980295566505"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="KLB-sM-fnQ">
+        <!--Calendar View Controller-->
+        <scene sceneID="wMf-BY-luN">
             <objects>
-                <viewController id="hja-YK-aai" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="ZqD-P1-u4H">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="755"/>
+                <viewController storyboardIdentifier="CalendarViewController" id="cxy-Za-oVb" customClass="CalendarViewController" customModule="TravelApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GhJ-oZ-IDc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="baratis monacemebi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BO4-bG-MaU">
-                                <rect key="frame" x="93" y="309" width="220" height="66"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="8AF-nM-ccD"/>
+                        <viewLayoutGuide key="safeArea" id="VuK-Eh-2Aq"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="znN-C6-EO7"/>
+                    <navigationItem key="navigationItem" id="EDJ-Kk-ta0"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="A3f-9J-UdO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DEE-oQ-xhj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1932" y="-35"/>
+            <point key="canvasLocation" x="1698" y="-35"/>
         </scene>
     </scenes>
     <resources>
@@ -194,9 +185,6 @@ where to go?</string>
         <image name="boner" width="343" height="172"/>
         <image name="frame.mars" width="343" height="94"/>
         <image name="mars" width="375" height="443"/>
-        <systemColor name="labelColor">
-            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
