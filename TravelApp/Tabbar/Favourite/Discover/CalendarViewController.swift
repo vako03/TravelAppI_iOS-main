@@ -12,6 +12,8 @@ class CalendarViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationController?.navigationBar.tintColor = .white
+
         
         createCalendar()
         
@@ -32,9 +34,11 @@ class CalendarViewController: UIViewController {
         calendarView.translatesAutoresizingMaskIntoConstraints = false
         
         let button = UIButton()
-        button.setTitle("Button Title", for: .normal)
-        button.backgroundColor = .systemBlue
+        button.setTitle("Pay", for: .normal)
+        button.backgroundColor = .orange
         button.translatesAutoresizingMaskIntoConstraints = false
+        button.layer.cornerRadius = button.frame.size.height / 2
+        button.clipsToBounds = true
         
         let container = UIView()
         container.translatesAutoresizingMaskIntoConstraints = false

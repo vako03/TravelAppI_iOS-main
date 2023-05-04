@@ -124,6 +124,7 @@
 		1A08B6D229B9E1B500EFE0AF /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				1A7C979229AB729100153D02 /* TabBarViewController.swift */,
 				1A08B6D929B9E2A000EFE0AF /* MyProfileViewController.swift */,
 				1A08B6D729B9E29B00EFE0AF /* PlacesViewController.swift */,
 				1A08B6DB29B9E2A500EFE0AF /* MenuCollectionViewCellController.swift */,
@@ -230,7 +231,6 @@
 				1AF03E2F29AB98B600D4ED4B /* Favourite */,
 				1A64CC3129C44B700001F2B1 /* Discover */,
 				1AF03E3029AB98CB00D4ED4B /* More */,
-				1A7C979229AB729100153D02 /* TabBarViewController.swift */,
 			);
 			path = Tabbar;
 			sourceTree = "<group>";
