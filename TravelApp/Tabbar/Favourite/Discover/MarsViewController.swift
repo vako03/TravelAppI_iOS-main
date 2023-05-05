@@ -15,11 +15,14 @@ class MarsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationController?.navigationBar.tintColor = .black
+        navigationController?.navigationBar.tintColor = .white
         button.layer.cornerRadius = button.frame.size.height / 2
            button.clipsToBounds = true
         
     }
+    
+    
+    
     
     @IBAction func byTicket(_ sender: Any) {
         let calendarVC = CalendarViewController()
