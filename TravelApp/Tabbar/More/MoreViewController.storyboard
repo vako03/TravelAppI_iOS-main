@@ -16,58 +16,202 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IGh-S6-PFy">
-                                <rect key="frame" x="16" y="251" width="361" height="78"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBrownColor"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x28-V4-Rnq">
+                                <rect key="frame" x="40" y="409" width="313" height="66"/>
+                                <color key="backgroundColor" systemColor="labelColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="66" id="A3l-AN-9W2"/>
+                                    <constraint firstAttribute="width" constant="313" id="kpF-zD-R6Y"/>
+                                </constraints>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="insurance"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x1L-KH-FgB">
-                                <rect key="frame" x="16" y="359" width="361" height="78"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBrownColor"/>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Exchange rates"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x28-V4-Rnq">
-                                <rect key="frame" x="16" y="140" width="361" height="78"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBrownColor"/>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="about us"/>
+                                <buttonConfiguration key="configuration" style="plain" title="About Us"/>
                                 <connections>
-                                    <action selector="button1:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="eMb-R5-OAm"/>
+                                    <segue destination="doN-d4-DNH" kind="showDetail" id="U76-qE-hPQ"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KBr-7O-Nbt">
-                                <rect key="frame" x="16" y="476" width="361" height="78"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBrownColor"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qlZ-lh-6Yx">
+                                <rect key="frame" x="40" y="514" width="313" height="66"/>
+                                <color key="backgroundColor" systemColor="labelColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="66" id="7Ed-1F-rpD"/>
+                                    <constraint firstAttribute="width" constant="313" id="WaM-bq-BfH"/>
+                                </constraints>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Check the flight"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Contact Us"/>
+                                <connections>
+                                    <segue destination="ehq-9y-tY8" kind="presentation" id="UYB-wo-jvd"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="balloning" translatesAutoresizingMaskIntoConstraints="NO" id="8RY-JT-fza">
+                                <rect key="frame" x="40" y="59" width="313" height="275"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jER-IL-Yfr">
+                                <rect key="frame" x="40" y="617" width="313" height="66"/>
+                                <color key="backgroundColor" systemColor="labelColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="313" id="5FD-FF-5rW"/>
+                                    <constraint firstAttribute="height" constant="66" id="qa9-y5-lcA"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Privacy Policy"/>
+                                <connections>
+                                    <segue destination="dgn-CX-C9C" kind="showDetail" id="2G9-Si-IlI"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
-                        <color key="backgroundColor" red="0.051062510909999997" green="0.088200370269999995" blue="0.11600964480000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" systemColor="systemGray6Color"/>
                         <color key="tintColor" red="1" green="0.77797722290000004" blue="0.22198707100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="x28-V4-Rnq" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="40" id="Fb9-pI-ry1"/>
+                            <constraint firstItem="qlZ-lh-6Yx" firstAttribute="top" secondItem="x28-V4-Rnq" secondAttribute="bottom" constant="39" id="FbD-fK-ktX"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="x28-V4-Rnq" secondAttribute="trailing" constant="40" id="Sbw-5C-7Gn"/>
+                            <constraint firstItem="qlZ-lh-6Yx" firstAttribute="leading" secondItem="jER-IL-Yfr" secondAttribute="leading" id="VTK-NM-8ug"/>
+                            <constraint firstItem="jER-IL-Yfr" firstAttribute="top" secondItem="qlZ-lh-6Yx" secondAttribute="bottom" constant="37" id="aPn-41-uKR"/>
+                            <constraint firstItem="x28-V4-Rnq" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="350" id="eAo-cA-cMM"/>
+                            <constraint firstItem="qlZ-lh-6Yx" firstAttribute="leading" secondItem="x28-V4-Rnq" secondAttribute="leading" id="meL-es-p4Y"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" tag="3" title="" image="more_icon" id="Vld-Lc-fr5"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="button1" destination="x28-V4-Rnq" id="GO7-wI-Bsv"/>
+                        <outlet property="button2" destination="qlZ-lh-6Yx" id="y5c-eC-RG7"/>
+                        <outlet property="button3" destination="jER-IL-Yfr" id="ju1-jP-Bph"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="64.885496183206101" y="-34.507042253521128"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="b5q-MH-6cF">
+            <objects>
+                <viewController id="doN-d4-DNH" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ess-bp-yx5">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l3I-IX-cpW">
+                                <rect key="frame" x="16" y="59" width="361" height="690"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <mutableString key="text">About Us:
+Welcome to our travel app! Our mission is to help travelers discover new destinations and create unforgettable experiences. We believe that travel should be accessible to everyone, and our app is designed to make planning your next trip simple and stress-free.
+
+Our company was founded in 2022 by a group of avid travelers who were frustrated with the hassle of planning trips. Since then, we've grown into a team of passionate professionals dedicated to making travel more enjoyable for everyone.
+
+Our team includes experienced travel experts, talented developers, and creative designers. We're proud of what we've built so far, and we're constantly working to improve our app and offer new features that make travel easier and more enjoyable.</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="UUQ-TF-Oik"/>
+                        <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Gy1-0L-bgE"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qAI-ex-UGg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="833" y="-614"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Q8t-7L-1n1">
+            <objects>
+                <viewController id="ehq-9y-tY8" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Bkp-9a-juG">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wip-Tq-oeS">
+                                <rect key="frame" x="16" y="59" width="361" height="690"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <mutableString key="text">Privacy Policy:
+At our travel app, we take your privacy seriously. We are committed to protecting your personal information and being transparent about how we collect, use, and store it. By using our app, you agree to the terms of this privacy policy.
+
+What information do we collect?
+When you use our app, we may collect personal information such as your name, email address, and location data. We may also collect information about your travel preferences and booking history.
+
+How do we use your information?
+We use your information to provide you with personalized recommendations, offers, and updates about our app. We may also use your information for marketing purposes or to conduct research to improve our app.
+
+How do we protect your information?
+We use industry-standard security measures to protect your personal information from unauthorized access, theft, or disclosure. We also restrict access to your information to authorized personnel only.
+
+How can you control your information?
+You can control your privacy settings and delete your data at any time through our app settings. If you have any questions or concerns about our privacy policy, please contact us at support@travelapp.com.</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ydK-1c-aol"/>
+                        <color key="backgroundColor" systemColor="systemGrayColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="7yl-Vd-Yp7"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="62J-ls-Rwp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1689" y="-35"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Qbg-Jf-rz0">
+            <objects>
+                <viewController id="dgn-CX-C9C" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1f7-t8-ia9">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CaL-l6-N9N">
+                                <rect key="frame" x="16" y="59" width="361" height="584"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <mutableString key="text">Contact Us:
+We love hearing from our users! If you have any questions, feedback, or issues with our app, please don't hesitate to contact us. You can reach us by email or through our social media channels.
+
+Email: support@travelapp.com
+
+Social Media:
+
+Facebook: @travelapp
+Twitter: @travelapp
+Instagram: @travelapp
+We typically respond to emails within 24-48 hours, but please note that our response time may be longer during weekends or holidays. We appreciate your patience and look forward to hearing from you!</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="xVn-7I-Lsk"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Km1-6k-NVx"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CEn-kk-JCf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="833" y="453"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="balloning" width="512" height="512"/>
         <image name="more_icon" width="47" height="42"/>
-        <systemColor name="systemBrownColor">
-            <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

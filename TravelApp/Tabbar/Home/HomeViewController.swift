@@ -9,8 +9,8 @@ import UIKit
 class HomeViewController: UIViewController {
     
     
-    @IBOutlet private weak var PlacesTableView: UITableView!
-    @IBOutlet private weak var MenuCollectionView: UICollectionView!
+    @IBOutlet private weak var placesTableView: UITableView!
+    @IBOutlet private weak var menuCollectionView: UICollectionView!
     @IBOutlet private weak var popularHorizontallyScrollableStackView: UIStackView!
     @IBOutlet private weak var popularHorizontallyScrollView: UIScrollView!
     @IBOutlet private weak var viewHomeBanner: UIView!
@@ -43,7 +43,7 @@ class HomeViewController: UIViewController {
                     }
                 }
                 
-                self.PlacesTableView.reloadData()
+                self.placesTableView.reloadData()
             }
         }
     }
@@ -56,17 +56,17 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
         
         //set menu collection view
-        MenuCollectionView.dataSource = self
-        MenuCollectionView.reloadData()
+        menuCollectionView.dataSource = self
+        menuCollectionView.reloadData()
         
-        let screenWidth = MenuCollectionView.frame.width
+        let screenWidth = menuCollectionView.frame.width
         let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
         layout.itemSize = CGSize(width: (screenWidth/4)-15, height: (screenWidth/4)-15)
-        MenuCollectionView.collectionViewLayout = layout
+        menuCollectionView.collectionViewLayout = layout
         
         //set places table
-        PlacesTableView.dataSource = self
-        PlacesTableView.reloadData()
+        placesTableView.dataSource = self
+        placesTableView.reloadData()
         
         //set others UI
         popularHorizontallyScrollView.showsHorizontalScrollIndicator = false
@@ -99,7 +99,7 @@ extension HomeViewController: UITableViewDataSource {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let indexPath = PlacesTableView.indexPathForSelectedRow,
+        if let indexPath = placesTableView.indexPathForSelectedRow,
            segue.identifier == PropertyKeys.showPlacesDetail {
             let detailPlaceViewController = segue.destination as! DetailViewController
 

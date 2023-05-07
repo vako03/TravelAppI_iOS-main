@@ -327,8 +327,8 @@
                     <navigationItem key="navigationItem" id="10p-w7-PkM"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="MenuCollectionView" destination="RT6-2j-pu4" id="h3t-o6-Tr9"/>
-                        <outlet property="PlacesTableView" destination="4t2-co-ZX3" id="HoB-Uk-lfJ"/>
+                        <outlet property="menuCollectionView" destination="RT6-2j-pu4" id="h3t-o6-Tr9"/>
+                        <outlet property="placesTableView" destination="4t2-co-ZX3" id="HoB-Uk-lfJ"/>
                         <outlet property="popularHorizontallyScrollView" destination="HC6-EN-G8j" id="ucB-jg-OVd"/>
                         <outlet property="popularHorizontallyScrollableStackView" destination="sS8-1Q-6Mq" id="HlK-Hr-KOR"/>
                         <outlet property="viewHomeBanner" destination="tdc-jE-Vbj" id="JfD-33-MEI"/>

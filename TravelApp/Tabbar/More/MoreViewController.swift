@@ -8,22 +8,22 @@
 import UIKit
 
 class MoreViewController: UIViewController {
-
+    
+    @IBOutlet weak var button1: UIButton!
+    @IBOutlet weak var button2: UIButton!
+    @IBOutlet weak var button3: UIButton!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        
+        [button1, button2, button3].forEach { button in
+                  button.layer.cornerRadius = button.frame.size.height / 2
+                  button.clipsToBounds = true
+              }
+    
     }
     
-    @IBAction func button1(_ sender: Any) {
-       
-          let exampleVC = MoreViewController()
-          addChild(exampleVC)
-          exampleVC.view.frame = view.bounds
-          view.addSubview(exampleVC.view)
-          exampleVC.didMove(toParent: self)
-        }
-    }
+}
     
   
 

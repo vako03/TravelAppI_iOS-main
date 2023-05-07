@@ -23,7 +23,7 @@ class FetchImageURL{
                 }
             } else {
                 // show as an alert if you want to
-                print("Error loading image");
+                print("Error loading image")
             }
         })
     }
@@ -40,7 +40,7 @@ class FetchImageURL{
                 }
             } else {
                 // show as an alert if you want to
-                print("Error loading image");
+                print("Error loading image")
             }
         })
     }
