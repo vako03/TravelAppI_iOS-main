@@ -30,11 +30,12 @@
 		1A7447E329C22EAA0030E619 /* ReviewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7447E229C22EA90030E619 /* ReviewTableViewCell.swift */; };
 		1A7447E529C22EB30030E619 /* GaleryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7447E429C22EB30030E619 /* GaleryCollectionViewCell.swift */; };
 		1A7C979329AB729100153D02 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7C979229AB729100153D02 /* TabBarViewController.swift */; };
-		1A7DD0902A02818D006678C2 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7DD08F2A02818D006678C2 /* CalendarViewController.swift */; };
 		1A7EDB1929A79F1B001D1F7F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1A7EDB1829A79F1B001D1F7F /* GoogleService-Info.plist */; };
 		1A7EDB1C29A79FE7001D1F7F /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 1A7EDB1B29A79FE7001D1F7F /* FirebaseAuth */; };
 		1A7EDB1E29A7A0FA001D1F7F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7EDB1D29A7A0FA001D1F7F /* LoginViewController.swift */; };
 		1A7EDB2029A7A10A001D1F7F /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7EDB1F29A7A10A001D1F7F /* RegisterViewController.swift */; };
+		1A893E882A0BC82600850AA1 /* PaymentOptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A893E862A0BC82600850AA1 /* PaymentOptionsViewController.swift */; };
+		1A893E892A0BC82600850AA1 /* PaymentOptionsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A893E872A0BC82600850AA1 /* PaymentOptionsViewController.xib */; };
 		1A9AD91C29B8CCF5003A8B20 /* TravvelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A9AD91A29B8CCF5003A8B20 /* TravvelCell.swift */; };
 		1A9AD91D29B8CCF5003A8B20 /* TravvelCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A9AD91B29B8CCF5003A8B20 /* TravvelCell.xib */; };
 		1A9AD91F29B9DCB6003A8B20 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A9AD91E29B9DCB6003A8B20 /* HomeViewController.swift */; };
@@ -81,10 +82,11 @@
 		1A7447E229C22EA90030E619 /* ReviewTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewTableViewCell.swift; sourceTree = "<group>"; };
 		1A7447E429C22EB30030E619 /* GaleryCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GaleryCollectionViewCell.swift; sourceTree = "<group>"; };
 		1A7C979229AB729100153D02 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
-		1A7DD08F2A02818D006678C2 /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		1A7EDB1829A79F1B001D1F7F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		1A7EDB1D29A7A0FA001D1F7F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		1A7EDB1F29A7A10A001D1F7F /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		1A893E862A0BC82600850AA1 /* PaymentOptionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentOptionsViewController.swift; sourceTree = "<group>"; };
+		1A893E872A0BC82600850AA1 /* PaymentOptionsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PaymentOptionsViewController.xib; sourceTree = "<group>"; };
 		1A9AD91A29B8CCF5003A8B20 /* TravvelCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravvelCell.swift; sourceTree = "<group>"; };
 		1A9AD91B29B8CCF5003A8B20 /* TravvelCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TravvelCell.xib; sourceTree = "<group>"; };
 		1A9AD91E29B9DCB6003A8B20 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -148,7 +150,8 @@
 				1A37F4D729C6FAEA004D8A69 /* DiscoverViewController.swift */,
 				1A37F4D929C6FAFF004D8A69 /* DiscoverViewController.storyboard */,
 				1A1F12B42A025798005235FA /* MarsViewController.swift */,
-				1A7DD08F2A02818D006678C2 /* CalendarViewController.swift */,
+				1A893E862A0BC82600850AA1 /* PaymentOptionsViewController.swift */,
+				1A893E872A0BC82600850AA1 /* PaymentOptionsViewController.xib */,
 			);
 			name = Discover;
 			path = Favourite/Discover;
@@ -379,6 +382,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A893E892A0BC82600850AA1 /* PaymentOptionsViewController.xib in Resources */,
 				1AF03E4029AB99F300D4ED4B /* FavouriteViewController.storyboard in Resources */,
 				1A71624329A6B6C700432188 /* LaunchScreen.storyboard in Resources */,
 				1AD520F629B09B7B009E3D8A /* DiscoverCell.xib in Resources */,
@@ -402,13 +406,13 @@
 			files = (
 				1A9AD91F29B9DCB6003A8B20 /* HomeViewController.swift in Sources */,
 				1A9AD92729B9DEC7003A8B20 /* FetchData.swift in Sources */,
-				1A7DD0902A02818D006678C2 /* CalendarViewController.swift in Sources */,
 				1AD5210D29B129F3009E3D8A /* Model.swift in Sources */,
 				1A7EDB1E29A7A0FA001D1F7F /* LoginViewController.swift in Sources */,
 				1A7447E129C22E9F0030E619 /* PlacesTableViewCell.swift in Sources */,
 				1A9AD91C29B8CCF5003A8B20 /* TravvelCell.swift in Sources */,
 				1AF03E4229AB9A0C00D4ED4B /* MoreViewController.swift in Sources */,
 				1AD6E5EE29D56BF4007B3B8B /* BezierView.swift in Sources */,
+				1A893E882A0BC82600850AA1 /* PaymentOptionsViewController.swift in Sources */,
 				1A7447E329C22EAA0030E619 /* ReviewTableViewCell.swift in Sources */,
 				1A08B6DA29B9E2A000EFE0AF /* MyProfileViewController.swift in Sources */,
 				1A71625A29A6C2BC00432188 /* OnboardingSlide.swift in Sources */,

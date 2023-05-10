@@ -181,22 +181,6 @@ where to go?</string>
             </objects>
             <point key="canvasLocation" x="837.60000000000002" y="-35.467980295566505"/>
         </scene>
-        <!--Calendar View Controller-->
-        <scene sceneID="wMf-BY-luN">
-            <objects>
-                <viewController storyboardIdentifier="CalendarViewController" id="cxy-Za-oVb" customClass="CalendarViewController" customModule="TravelApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="GhJ-oZ-IDc">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="VuK-Eh-2Aq"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="EDJ-Kk-ta0"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="DEE-oQ-xhj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1698" y="-35"/>
-        </scene>
     </scenes>
     <resources>
         <image name="Space Safety" width="343" height="284"/>

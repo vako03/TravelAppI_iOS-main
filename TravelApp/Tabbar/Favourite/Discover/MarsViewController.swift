@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import HorizonCalendar
 
 class MarsViewController: UIViewController {
     
@@ -16,17 +15,17 @@ class MarsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationController?.navigationBar.tintColor = .white
-        button.layer.cornerRadius = button.frame.size.height / 2
-           button.clipsToBounds = true
-        
+              button.layer.cornerRadius = button.frame.size.height / 2
+              button.clipsToBounds = true
     }
     
     
     
     
     @IBAction func byTicket(_ sender: Any) {
-        let calendarVC = CalendarViewController()
-        self.navigationController?.pushViewController(calendarVC, animated: true)
-        }
+        let paymentOptionsVC = PaymentOptionsViewController(nibName: "PaymentOptionsViewController", bundle: nil)
+        navigationController?.pushViewController(paymentOptionsVC, animated: true)
+    }
+
     
 }
