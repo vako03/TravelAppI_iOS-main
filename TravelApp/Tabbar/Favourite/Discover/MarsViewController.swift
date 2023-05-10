@@ -17,6 +17,8 @@ class MarsViewController: UIViewController {
         navigationController?.navigationBar.tintColor = .white
               button.layer.cornerRadius = button.frame.size.height / 2
               button.clipsToBounds = true
+        navigationController?.navigationBar.tintColor = .white
+
     }
     
     

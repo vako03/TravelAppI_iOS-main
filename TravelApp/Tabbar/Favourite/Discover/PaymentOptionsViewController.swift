@@ -19,6 +19,33 @@ class PaymentOptionsViewController: UIViewController {
         navigationController?.navigationBar.tintColor = .black
     }
     
-    @IBOutlet weak var payButton: UIImageView!
-    
-}
+    @IBAction func payButtonTapped(_ sender: UIButton) {
+        guard let cardNameText = cardName.text,
+                     let cardNumberText = cardNumber.text,
+                     let expiryDateText = expiryDate.text,
+                     let cVVText = cVV.text,
+                     !cardNameText.isEmpty,
+                     !cardNumberText.isEmpty,
+                     !expiryDateText.isEmpty,
+                     !cVVText.isEmpty else {
+                   showNotification("Please fill in all fields.")
+                   return
+               }
+               
+               showNotification("Payment completed successfully")
+               navigateToPreviousPage()
+           }
+           
+           func showNotification(_ message: String) {
+               let alertController = UIAlertController(title: "Notification", message: message, preferredStyle: .alert)
+               let okAction = UIAlertAction(title: "OK", style: .default) { [weak self] _ in
+                   self?.navigateToPreviousPage()
+               }
+               alertController.addAction(okAction)
+               present(alertController, animated: true, completion: nil)
+           }
+           
+           func navigateToPreviousPage() {
+               navigationController?.popViewController(animated: true)
+           }
+       }
