@@ -44,8 +44,8 @@
                                     <segue destination="ehq-9y-tY8" kind="presentation" id="UYB-wo-jvd"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="balloning" translatesAutoresizingMaskIntoConstraints="NO" id="8RY-JT-fza">
-                                <rect key="frame" x="40" y="59" width="313" height="275"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cover" translatesAutoresizingMaskIntoConstraints="NO" id="8RY-JT-fza">
+                                <rect key="frame" x="16" y="59" width="361" height="322"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jER-IL-Yfr">
@@ -99,12 +99,12 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l3I-IX-cpW">
                                 <rect key="frame" x="16" y="59" width="361" height="690"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <mutableString key="text">About Us:
+                                <string key="text">About Us:
 Welcome to our travel app! Our mission is to help travelers discover new destinations and create unforgettable experiences. We believe that travel should be accessible to everyone, and our app is designed to make planning your next trip simple and stress-free.
 
 Our company was founded in 2022 by a group of avid travelers who were frustrated with the hassle of planning trips. Since then, we've grown into a team of passionate professionals dedicated to making travel more enjoyable for everyone.
 
-Our team includes experienced travel experts, talented developers, and creative designers. We're proud of what we've built so far, and we're constantly working to improve our app and offer new features that make travel easier and more enjoyable.</mutableString>
+Our team includes experienced travel experts, talented developers, and creative designers. We're proud of what we've built so far, and we're constantly working to improve our app and offer new features that make travel easier and more enjoyable.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -130,7 +130,7 @@ Our team includes experienced travel experts, talented developers, and creative 
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wip-Tq-oeS">
                                 <rect key="frame" x="16" y="59" width="361" height="690"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <mutableString key="text">Privacy Policy:
+                                <string key="text">Privacy Policy:
 At our travel app, we take your privacy seriously. We are committed to protecting your personal information and being transparent about how we collect, use, and store it. By using our app, you agree to the terms of this privacy policy.
 
 What information do we collect?
@@ -143,7 +143,7 @@ How do we protect your information?
 We use industry-standard security measures to protect your personal information from unauthorized access, theft, or disclosure. We also restrict access to your information to authorized personnel only.
 
 How can you control your information?
-You can control your privacy settings and delete your data at any time through our app settings. If you have any questions or concerns about our privacy policy, please contact us at support@travelapp.com.</mutableString>
+You can control your privacy settings and delete your data at any time through our app settings. If you have any questions or concerns about our privacy policy, please contact us at support@travelapp.com.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -169,7 +169,7 @@ You can control your privacy settings and delete your data at any time through o
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CaL-l6-N9N">
                                 <rect key="frame" x="16" y="59" width="361" height="584"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <mutableString key="text">Contact Us:
+                                <string key="text">Contact Us:
 We love hearing from our users! If you have any questions, feedback, or issues with our app, please don't hesitate to contact us. You can reach us by email or through our social media channels.
 
 Email: support@travelapp.com
@@ -179,7 +179,7 @@ Social Media:
 Facebook: @travelapp
 Twitter: @travelapp
 Instagram: @travelapp
-We typically respond to emails within 24-48 hours, but please note that our response time may be longer during weekends or holidays. We appreciate your patience and look forward to hearing from you!</mutableString>
+We typically respond to emails within 24-48 hours, but please note that our response time may be longer during weekends or holidays. We appreciate your patience and look forward to hearing from you!</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -196,7 +196,7 @@ We typically respond to emails within 24-48 hours, but please note that our resp
         </scene>
     </scenes>
     <resources>
-        <image name="balloning" width="512" height="512"/>
+        <image name="cover" width="375" height="443"/>
         <image name="more_icon" width="47" height="42"/>
         <systemColor name="labelColor">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
