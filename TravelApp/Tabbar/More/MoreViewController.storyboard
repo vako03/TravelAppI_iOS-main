@@ -41,7 +41,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Contact Us"/>
                                 <connections>
-                                    <segue destination="ehq-9y-tY8" kind="presentation" id="UYB-wo-jvd"/>
+                                    <segue destination="dgn-CX-C9C" kind="show" id="DDX-jh-8tM"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cover" translatesAutoresizingMaskIntoConstraints="NO" id="8RY-JT-fza">
@@ -59,12 +59,12 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Privacy Policy"/>
                                 <connections>
-                                    <segue destination="dgn-CX-C9C" kind="showDetail" id="2G9-Si-IlI"/>
+                                    <segue destination="ehq-9y-tY8" kind="show" id="qLr-uS-nD3"/>
                                 </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
-                        <color key="backgroundColor" systemColor="systemGray6Color"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <color key="tintColor" red="1" green="0.77797722290000004" blue="0.22198707100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="x28-V4-Rnq" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="40" id="Fb9-pI-ry1"/>
@@ -99,12 +99,12 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l3I-IX-cpW">
                                 <rect key="frame" x="16" y="59" width="361" height="690"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">About Us:
+                                <mutableString key="text">About Us:
 Welcome to our travel app! Our mission is to help travelers discover new destinations and create unforgettable experiences. We believe that travel should be accessible to everyone, and our app is designed to make planning your next trip simple and stress-free.
 
 Our company was founded in 2022 by a group of avid travelers who were frustrated with the hassle of planning trips. Since then, we've grown into a team of passionate professionals dedicated to making travel more enjoyable for everyone.
 
-Our team includes experienced travel experts, talented developers, and creative designers. We're proud of what we've built so far, and we're constantly working to improve our app and offer new features that make travel easier and more enjoyable.</string>
+Our team includes experienced travel experts, talented developers, and creative designers. We're proud of what we've built so far, and we're constantly working to improve our app and offer new features that make travel easier and more enjoyable.</mutableString>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -128,9 +128,9 @@ Our team includes experienced travel experts, talented developers, and creative 
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wip-Tq-oeS">
-                                <rect key="frame" x="16" y="59" width="361" height="690"/>
+                                <rect key="frame" x="16" y="20" width="361" height="729"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">Privacy Policy:
+                                <mutableString key="text">Privacy Policy:
 At our travel app, we take your privacy seriously. We are committed to protecting your personal information and being transparent about how we collect, use, and store it. By using our app, you agree to the terms of this privacy policy.
 
 What information do we collect?
@@ -142,8 +142,7 @@ We use your information to provide you with personalized recommendations, offers
 How do we protect your information?
 We use industry-standard security measures to protect your personal information from unauthorized access, theft, or disclosure. We also restrict access to your information to authorized personnel only.
 
-How can you control your information?
-You can control your privacy settings and delete your data at any time through our app settings. If you have any questions or concerns about our privacy policy, please contact us at support@travelapp.com.</string>
+</mutableString>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -156,7 +155,7 @@ You can control your privacy settings and delete your data at any time through o
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="62J-ls-Rwp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1689" y="-35"/>
+            <point key="canvasLocation" x="1687.7862595419847" y="-35.211267605633807"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Qbg-Jf-rz0">
@@ -206,9 +205,6 @@ We typically respond to emails within 24-48 hours, but please note that our resp
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemGray6Color">
-            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGrayColor">
             <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
